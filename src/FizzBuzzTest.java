@@ -16,6 +16,7 @@ public class FizzBuzzTest {
 		FizzBuzz fb = getNewFizzBuzz();
 		assertEquals("Fizz", fb.say(3));
 		assertEquals("Fizz", fb.say(6));
+		assertEquals("Fizz", fb.say(9));
 	}
 	
 	@Test
