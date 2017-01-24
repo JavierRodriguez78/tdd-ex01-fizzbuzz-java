@@ -25,6 +25,12 @@ public class FizzBuzzTest {
 		assertEquals("Buzz", fb.say(5));
 		assertEquals("Buzz", fb.say(10));
 	}
+	
+	@Test
+	public void should_return_fizzbuzz_when_multiples_of_fifteen() {
+		FizzBuzz fb = getNewFizzBuzz();
+		assertEquals("FizzBuzz", fb.say(15));
+	}
 
 	private FizzBuzz getNewFizzBuzz() {
 		return new FizzBuzz();
