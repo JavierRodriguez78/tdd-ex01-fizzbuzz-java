@@ -2,7 +2,7 @@
 public class FizzBuzz {
 
 	public String say(int i) {
-		return "1";
+		return String.valueOf(i);
 	}
 
 }
