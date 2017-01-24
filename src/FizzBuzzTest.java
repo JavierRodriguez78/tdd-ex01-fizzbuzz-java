@@ -23,6 +23,7 @@ public class FizzBuzzTest {
 	public void should_return_buzz_when_multiples_of_five() {
 		FizzBuzz fb = getNewFizzBuzz();
 		assertEquals("Buzz", fb.say(5));
+		assertEquals("Buzz", fb.say(10));
 	}
 
 	private FizzBuzz getNewFizzBuzz() {
