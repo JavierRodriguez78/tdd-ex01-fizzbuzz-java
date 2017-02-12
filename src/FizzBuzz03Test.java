@@ -37,6 +37,7 @@ public class FizzBuzz03Test {
 	public void should_return_transfer_when_multiples_of_fifteen() {
 		FizzBuzz03 fb = getNewFizzBuzz();
 		assertEquals("Transfer", fb.say(15));
+		assertEquals("Transfer", fb.say(30));
 	}
 	
 	@Test
