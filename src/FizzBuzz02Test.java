@@ -41,7 +41,10 @@ public class FizzBuzz02Test {
 	}
 
 	private FizzBuzz02 getNewFizzBuzz() {
-		return new FizzBuzz02();
+		FizzBuzz02 fb = new FizzBuzz02();
+		fb.setFizzBuzzRules(new FizzBuzzRule02[] { new FizzRule02(),
+			       				   				   new BuzzRule02() });
+		return fb;
 	}
 
 }
