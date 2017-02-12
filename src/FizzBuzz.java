@@ -2,10 +2,14 @@
 public class FizzBuzz {
 
 	public String say(int i) {
-		if (isMultipleOfThree(i) && isMultipleofFive(i)) return "Fizz" + "Buzz";
-		if (isMultipleofFive(i)) return "Buzz";
-		if (isMultipleOfThree(i)) return "Fizz";
-		return String.valueOf(i);
+		String result = "";
+		if (isMultipleOfThree(i)) result += "Fizz";
+		if (isMultipleofFive(i)) result += "Buzz";
+		if (result.isEmpty()) {
+			return String.valueOf(i);
+		} else {
+			return result; 
+		}
 	}
 
 	private boolean isMultipleofFive(int i) {
