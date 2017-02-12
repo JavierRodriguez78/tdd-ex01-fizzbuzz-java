@@ -1,13 +1,14 @@
+import java.util.ArrayList;
 
 public class FizzBuzz02 {
 
 	public String say(int i) {
 		String result = "";
-		FizzRule02 fizz = new FizzRule02();
-		BuzzRule02 buzz = new BuzzRule02();
-		
-		if (fizz.isValid(i)) result += fizz.say();
-		if (buzz.isValid(i)) result += buzz.say();
+		FizzBuzzRule02[] rules = { new FizzRule02(),
+								   new BuzzRule02() };
+		for (FizzBuzzRule02 r : rules) {
+			if (r.isValid(i)) result += r.say();
+		}
 		if (result.isEmpty()) {
 			return String.valueOf(i);
 		} else {
