@@ -3,8 +3,11 @@ public class FizzBuzz02 {
 
 	public String say(int i) {
 		String result = "";
-		if (isMultipleOfThree(i)) result += "Fizz";
-		if (isMultipleofFive(i)) result += "Buzz";
+		FizzRule02 fizz = new FizzRule02();
+		BuzzRule02 buzz = new BuzzRule02();
+		
+		if (fizz.isValid(i)) result += "Fizz";
+		if (buzz.isValid(i)) result += "Buzz";
 		if (result.isEmpty()) {
 			return String.valueOf(i);
 		} else {
@@ -12,12 +15,4 @@ public class FizzBuzz02 {
 		}
 	}
 
-	private boolean isMultipleofFive(int i) {
-		return i % 5 == 0;
-	}
-
-	private boolean isMultipleOfThree(int i) {
-		return i % 3 == 0;
-	}
-	
 }
