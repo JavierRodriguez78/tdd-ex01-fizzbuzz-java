@@ -72,7 +72,8 @@ public class FizzBuzz03Test {
 		fb.setFizzBuzzRules(new FizzBuzzRule02[] {  new FizzBuzzWowRule03(),
 													new BuzzWowRule03(),
 													new FizzWowRule03(),
-													new FizzBuzzRule03(),
+//													new FizzBuzzRule03(),
+													new TransferRule03(),
 													new WowRule02(),
 													new BuzzRule02(),
 													new FizzRule02() });
