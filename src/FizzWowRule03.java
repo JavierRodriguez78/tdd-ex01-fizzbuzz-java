@@ -1,14 +1,14 @@
 
-public class BuzzWowRule implements FizzBuzzRule02 {
+public class FizzWowRule03 implements FizzBuzzRule02 {
 
 	@Override
 	public boolean isValid(int i) {
-		return i % 35 == 0;
+		return i % 21 == 0;
 	}
 
 	@Override
 	public String say() {
-		return "BuzzWow";
+		return "FizzWow";
 	}
 
 }

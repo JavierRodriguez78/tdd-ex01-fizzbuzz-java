@@ -1,5 +1,5 @@
 
-public class FizzBuzzRule implements FizzBuzzRule02 {
+public class FizzBuzzRule03 implements FizzBuzzRule02 {
 
 	@Override
 	public boolean isValid(int i) {

@@ -8,16 +8,10 @@ public class FizzBuzz03 {
 	}
 
 	public String say(int i) {
-		String result = "";
-
 		for (FizzBuzzRule02 r : rules) {
-			if (r.isValid(i)) result += r.say();
+			if (r.isValid(i)) return r.say();
 		}
-		if (result.isEmpty()) {
-			return String.valueOf(i);
-		} else {
-			return result; 
-		}
+		return String.valueOf(i);
 	}
 	
 }

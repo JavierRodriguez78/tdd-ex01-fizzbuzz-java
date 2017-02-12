@@ -63,9 +63,13 @@ public class FizzBuzz03Test {
 
 	private FizzBuzz03 getNewFizzBuzz() {
 		FizzBuzz03 fb = new FizzBuzz03();
-		fb.setFizzBuzzRules(new FizzBuzzRule02[] { new FizzRule02(),
-			       				   				   new BuzzRule02(),
-			       				   				   new WowRule02() });
+		fb.setFizzBuzzRules(new FizzBuzzRule02[] {  new FizzBuzzWowRule03(),
+													new BuzzWowRule03(),
+													new FizzWowRule03(),
+													new FizzBuzzRule03(),
+													new WowRule02(),
+													new BuzzRule02(),
+													new FizzRule02() });
 		return fb;
 	}
 	
