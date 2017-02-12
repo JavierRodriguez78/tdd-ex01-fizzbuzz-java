@@ -67,12 +67,36 @@ public class FizzBuzz03Test {
 //		assertEquals("FizzBuzzWow", fb.say(105));
 //		assertEquals("FizzBuzzWow", fb.say(210));
 //	}
+	
+	@Test
+	public void should_return_thousand_when_multiples_of_21() {
+		FizzBuzz03 fb = getNewFizzBuzz();
+		assertEquals("Thousand", fb.say(21));
+		assertEquals("Thousand", fb.say(42));
+	}
+	
+	@Test
+	public void should_return_foresee_when_multiples_of_35() {
+		FizzBuzz03 fb = getNewFizzBuzz();
+		assertEquals("Foresee", fb.say(35));
+		assertEquals("Foresee", fb.say(70));
+	}
+	
+	@Test
+	public void should_return_tfs_when_multiples_of_105() {
+		FizzBuzz03 fb = getNewFizzBuzz();
+		assertEquals("TFS", fb.say(105));
+		assertEquals("TFS", fb.say(210));
+	}
 
 	private FizzBuzz03 getNewFizzBuzz() {
 		FizzBuzz03 fb = new FizzBuzz03();
-		fb.setFizzBuzzRules(new FizzBuzzRule02[] {  new FizzBuzzWowRule03(),
-													new BuzzWowRule03(),
-													new FizzWowRule03(),
+		fb.setFizzBuzzRules(new FizzBuzzRule02[] {  new TFSRule03(),
+													new ForeseeRule03(),
+													new ThousandRule03(),
+//													new FizzBuzzWowRule03(),
+//													new BuzzWowRule03(),
+//													new FizzWowRule03(),
 //													new FizzBuzzRule03(),
 													new TransferRule03(),
 													new WowRule02(),
