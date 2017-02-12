@@ -26,11 +26,17 @@ public class FizzBuzz03Test {
 		assertEquals("Buzz", fb.say(10));
 	}
 	
+//	@Test
+//	public void should_return_fizzbuzz_when_multiples_of_fifteen() {
+//		FizzBuzz03 fb = getNewFizzBuzz();
+//		assertEquals("FizzBuzz", fb.say(15));
+//		assertEquals("FizzBuzz", fb.say(30));
+//	}
+	
 	@Test
-	public void should_return_fizzbuzz_when_multiples_of_fifteen() {
+	public void should_return_transfer_when_multiples_of_fifteen() {
 		FizzBuzz03 fb = getNewFizzBuzz();
-		assertEquals("FizzBuzz", fb.say(15));
-		assertEquals("FizzBuzz", fb.say(30));
+		assertEquals("Transfer", fb.say(15));
 	}
 	
 	@Test
@@ -40,26 +46,26 @@ public class FizzBuzz03Test {
 		assertEquals("Wow", fb.say(14));
 	}
 	
-	@Test
-	public void should_return_fizzwow_when_multiples_of_21() {
-		FizzBuzz03 fb = getNewFizzBuzz();
-		assertEquals("FizzWow", fb.say(21));
-		assertEquals("FizzWow", fb.say(42));
-	}
-	
-	@Test
-	public void should_return_buzzwow_when_multiples_of_35() {
-		FizzBuzz03 fb = getNewFizzBuzz();
-		assertEquals("BuzzWow", fb.say(35));
-		assertEquals("BuzzWow", fb.say(70));
-	}
-	
-	@Test
-	public void should_return_fizzbuzzwow_when_multiples_of_105() {
-		FizzBuzz03 fb = getNewFizzBuzz();
-		assertEquals("FizzBuzzWow", fb.say(105));
-		assertEquals("FizzBuzzWow", fb.say(210));
-	}
+//	@Test
+//	public void should_return_fizzwow_when_multiples_of_21() {
+//		FizzBuzz03 fb = getNewFizzBuzz();
+//		assertEquals("FizzWow", fb.say(21));
+//		assertEquals("FizzWow", fb.say(42));
+//	}
+//	
+//	@Test
+//	public void should_return_buzzwow_when_multiples_of_35() {
+//		FizzBuzz03 fb = getNewFizzBuzz();
+//		assertEquals("BuzzWow", fb.say(35));
+//		assertEquals("BuzzWow", fb.say(70));
+//	}
+//	
+//	@Test
+//	public void should_return_fizzbuzzwow_when_multiples_of_105() {
+//		FizzBuzz03 fb = getNewFizzBuzz();
+//		assertEquals("FizzBuzzWow", fb.say(105));
+//		assertEquals("FizzBuzzWow", fb.say(210));
+//	}
 
 	private FizzBuzz03 getNewFizzBuzz() {
 		FizzBuzz03 fb = new FizzBuzz03();
