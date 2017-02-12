@@ -42,7 +42,8 @@ public class FizzBuzz02Test {
 	private FizzBuzz02 getNewFizzBuzz() {
 		FizzBuzz02 fb = new FizzBuzz02();
 		fb.setFizzBuzzRules(new FizzBuzzRule02[] { new FizzRule02(),
-			       				   				   new BuzzRule02() });
+			       				   				   new BuzzRule02(),
+			       				   				   new WowRule02() });
 		return fb;
 	}
 
