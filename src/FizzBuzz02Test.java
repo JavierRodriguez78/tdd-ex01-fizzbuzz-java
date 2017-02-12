@@ -37,6 +37,7 @@ public class FizzBuzz02Test {
 	public void should_return_wow_when_multiples_of_seven() {
 		FizzBuzz02 fb = getNewFizzBuzz();
 		assertEquals("Wow", fb.say(7));
+		assertEquals("Wow", fb.say(14));
 	}
 
 	private FizzBuzz02 getNewFizzBuzz() {
