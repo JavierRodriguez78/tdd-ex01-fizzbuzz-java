@@ -6,8 +6,8 @@ public class FizzBuzz02 {
 		FizzRule02 fizz = new FizzRule02();
 		BuzzRule02 buzz = new BuzzRule02();
 		
-		if (fizz.isValid(i)) result += "Fizz";
-		if (buzz.isValid(i)) result += "Buzz";
+		if (fizz.isValid(i)) result += fizz.say();
+		if (buzz.isValid(i)) result += buzz.say();
 		if (result.isEmpty()) {
 			return String.valueOf(i);
 		} else {

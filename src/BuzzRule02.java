@@ -6,4 +6,9 @@ public class BuzzRule02 implements FizzBuzzRule02 {
 		return i % 5 == 0;
 	}
 
+	@Override
+	public String say() {
+		return "Buzz";
+	}
+
 }
