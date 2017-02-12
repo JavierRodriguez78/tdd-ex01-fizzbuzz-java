@@ -39,6 +39,27 @@ public class FizzBuzz02Test {
 		assertEquals("Wow", fb.say(7));
 		assertEquals("Wow", fb.say(14));
 	}
+	
+	@Test
+	public void should_return_fizzwow_when_multiples_of_21() {
+		FizzBuzz02 fb = getNewFizzBuzz();
+		assertEquals("FizzWow", fb.say(21));
+		assertEquals("FizzWow", fb.say(42));
+	}
+	
+	@Test
+	public void should_return_buzzwow_when_multiples_of_35() {
+		FizzBuzz02 fb = getNewFizzBuzz();
+		assertEquals("BuzzWow", fb.say(35));
+		assertEquals("BuzzWow", fb.say(70));
+	}
+	
+	@Test
+	public void should_return_fizzbuzzwow_when_multiples_of_105() {
+		FizzBuzz02 fb = getNewFizzBuzz();
+		assertEquals("FizzBuzzWow", fb.say(105));
+		assertEquals("FizzBuzzWow", fb.say(210));
+	}
 
 	private FizzBuzz02 getNewFizzBuzz() {
 		FizzBuzz02 fb = new FizzBuzz02();
